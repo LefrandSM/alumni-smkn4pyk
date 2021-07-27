@@ -1,0 +1,71 @@
+.navbar .navbar-nav .btn {
+  margin-bottom: 15px;
+}
+.jumbotron {
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  height: 500px;
+  padding-top: 100px;
+  position: relative;
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.jumbotron .lead::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 200px;
+  height: 10px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+img.kepala-sekolah {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.tulisan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* UTILITY */
+.tebal {
+  font-weight: 500;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    margin-left: 20px;
+  }
+  .navbar .navbar-nav .btn {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+  .jumbotron {
+    height: 800px;
+    padding-top: 200px;
+  }
+  img.kepala-sekolah {
+    margin-bottom: 0;
+  }
+}
